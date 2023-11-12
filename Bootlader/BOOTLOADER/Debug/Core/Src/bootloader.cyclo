@@ -1,0 +1,14 @@
+../Core/Src/bootloader.c:35:13:bootloader_jump_to_user_app	1
+../Core/Src/bootloader.c:61:16:BOOTLOADER_PRINT	1
+../Core/Src/bootloader.c:81:19:BOOTLOADER_RECEIVE_COMMAND	7
+../Core/Src/bootloader.c:148:6:BOOTLOADER_SEND_VERSION_INFO	2
+../Core/Src/bootloader.c:191:6:Bootloader_Memory_Write	4
+../Core/Src/bootloader.c:272:13:Bootloader_Jump_To_Address	3
+../Core/Src/bootloader.c:325:16:Bootloader_CRC_Verify	3
+../Core/Src/bootloader.c:358:13:Bootloader_Send_ACK	1
+../Core/Src/bootloader.c:367:13:Bootloader_Send_NACK	1
+../Core/Src/bootloader.c:376:13:Bootloader_Send_Data_To_Host	1
+../Core/Src/bootloader.c:388:16:Host_Address_Verification	3
+../Core/Src/bootloader.c:407:16:Perform_Flash_Erase	7
+../Core/Src/bootloader.c:488:13:Bootloader_Erase_Flash	3
+../Core/Src/bootloader.c:540:16:Flash_Memory_Write_Payload	7
