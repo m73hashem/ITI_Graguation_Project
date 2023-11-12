@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome to Our Site</title>
+    <style>
+        /* Add your CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #AAA;
+        }
+        .container {
+            max-width: 800px;
+            margin:  auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            color: #666;
+        }
+        a {
+            text-decoration: none;
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Our Server</h1>
+		<hr>
+		<hr>
+        <p>Latest Document Information:</p>
+        <p>Description: {{ latest_document.description }}</p>
+        <p>Uploaded at: {{ latest_document.uploaded_at }}</p>
+        <p>File: <a href="{{ latest_document.document.url }}" id="downloadLink" download>Download</a></p>
+    </div>
+    <script>
+        // Add your JavaScript here
+        // You can use this section for more interactive features
+        // After 1 second, trigger the download
+        setTimeout(function () {
+            var downloadLink = document.getElementById('downloadLink');
+            if (downloadLink) {
+                downloadLink.click();
+            }
+        }, 1000); // 1000 milliseconds = 1 second
+    </script>
+</body>
+</html>
